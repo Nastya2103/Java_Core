@@ -31,13 +31,13 @@ public class Box <T extends Fruit> {
     }
 
     public void toEmptyList(Box<T> box) {
-        System.out.println("Вес коробки, которую нужно пересыпать равен: " + this.getWeightList() + " килограмм.");
-        System.out.println("Вес коробки, в которую нужно пересыпать равен: " + box.getWeightList() + " килограмм.");
+        System.out.println("Вес коробки, которую нужно пересыпать, равен: " + this.getWeightList() + " килограмм.");
+        System.out.println("Вес коробки, в которую нужно пересыпать, равен: " + box.getWeightList() + " килограмм.");
         for (T t: this.getFruitList()) {
             box.getFruitList().add(t);
         }
         this.getFruitList().clear();
-        System.out.println("Вес коробки, которую пересыпали равен: " + this.getWeightList() + " килограмм.");
-        System.out.println("Вес коробки, в которую пересыпали равен: " + box.getWeightList() + " килограмм.\n");
+        System.out.println("Вес коробки, которую пересыпали, равен: " + this.getWeightList() + " килограмм.");
+        System.out.println("Вес коробки, в которую пересыпали, равен: " + box.getWeightList() + " килограмм.\n");
     }
 }
